@@ -1,17 +1,14 @@
-#author: Alejandro Polo Carvajal
-#language: es
+Feature: Open demoblaze page
 
-Característica: Abrir una pagina web
+  As Moiso,
+  I want to test the elements card and sub-functions,
+  So that I can check the robustness and error control of the application or web page.
 
-  Yo como alejandro
-  Quiero realizar una prueba a la carta de elementos y las subFunciones
-  Para comprobar la robuste y control de errores de la aplicacion o pagina web
-
-  Antecedentes:
-    Dado "alejandro" abre el sitio web de pruebas
+  Background:
+    Given "Moiso" opens the test website
 
   @successful
-  Escenario: validacion en la funcion del ID Card Elements
-    Y desea validar la funcion de la carta de elementos
-    Cuando selecciona aleatoriamente alguna de las subfunciones
-    Entonces visualizara en la cabecera el nombre de la opción elegida
+  Scenario: Validation of the ID Card Elements function
+    And he wants to validate the elements card function
+    When he randomly selects one of the sub-functions
+    Then he should see the name of the selected option in the header

@@ -4,6 +4,7 @@ import co.com.screenplay.project.questions.ValidateElementsTextBtn;
 import co.com.screenplay.project.tasks.ChooseSubElementsRandomTask;
 import co.com.screenplay.project.tasks.FuntionsElementsTask;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -25,21 +26,28 @@ public class OpenWebStep {
         OnStage.setTheStage(new OnlineCast());
     }
 
-    @And("desea validar la funcion de la carta de elementos")
+    @Given("{string} opens the test website")
+    public void opensTheTestWebsite(String actorName) {
+        OnStage.theActorCalled(actorName).attemptsTo(
+
+        );
+    }
+
+    @And("he wants to validate the elements card function")
     public void wantValidateTheFunctionOfTheElementChart() {
         OnStage.theActorCalled(ACTOR).attemptsTo(
                 FuntionsElementsTask.choose()
         );
     }
 
-    @When("selecciona aleatoriamente alguna de las subfunciones")
+    @When("he randomly selects one of the sub-functions")
     public void randomlySelectsSomeOfTheSubfunctions() {
         OnStage.theActorCalled(ACTOR).attemptsTo(
                 ChooseSubElementsRandomTask.witchParams(fakerNumberOneAndNine())
         );
     }
 
-    @Then("visualizara en la cabecera el nombre de la opción elegida")
+    @Then("he should see the name of the selected option in the header")
     public void willDisplayInTheHeaderTheNameOfTheChosenOption() {
         String validateText = OnStage.theActor(ACTOR).recall(REMEMBER_TEXT_BTN_SUB_ELEMENTS);
         if (validateText != null) {

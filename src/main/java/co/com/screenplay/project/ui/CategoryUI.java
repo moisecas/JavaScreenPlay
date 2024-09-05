@@ -12,22 +12,27 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class CategoryUI extends PageObject {
 
-    public static final Target BTN_CLOSE = Target.the("pulsa el boton cerrar del modal del login")
-            .located(By.cssSelector("#logInModal > div > div > div.modal-footer > button.btn.btn-secondary"));
+    // Categorías en la página de Demoblaze
+    public static final Target CATEGORY_PHONES = Target.the("Categoría Phones")
+            .located(By.xpath("//a[text()='Phones']"));
 
-    //Localizador dinamico - items categoria
-    public static final Target ITEM_CATEGORY = Target.the("Selecciona cualquiera de las tres categoria")
-            .locatedBy("//div[@class='list-group']/a[{0}]");
+    public static final Target CATEGORY_LAPTOPS = Target.the("Categoría Laptops")
+            .located(By.xpath("//a[text()='Laptops']"));
 
-    //Localizador lista - Icard productos
+    public static final Target CATEGORY_MONITORS = Target.the("Categoría Monitors")
+            .located(By.xpath("//a[text()='Monitors']"));
+
+    //metodo para la lista de los productos
+
+    public static  List<WebElement> getLocatorListProducts(){
+        return locatorListProducts();
+    }
 
     private static List<WebElement> locatorListProducts() {
         String xpath = "//div[@id='tbodyid']//h4/a[@class='hrefch']";
         return BrowseTheWeb.as(theActorInTheSpotlight()).getDriver().findElements(By.xpath(xpath));
     }
 
-    public static List<WebElement> getLocatorListProducts() {
-        return locatorListProducts();
-    }
+
 
 }

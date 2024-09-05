@@ -6,16 +6,17 @@ import org.openqa.selenium.By;
 
 public class HomeUI extends PageObject {
 
-    public static final Target ID_CARD_ELEMENTS= Target.the("Boton elementos")
-            .located(By.xpath ("//div[@class='card mt-4 top-card']//div[@class='card-body']//h5[contains(text(),'Elements')]"));
+    public static final Target ID_HOME = Target.the("Boton home")
+            .located(By.xpath("//li[@class='nav-item active']//a[@class='nav-link']"));
 
-    public static final Target BTN_ELEMENTS= Target.the("Boton elementos")
-            .located(By.xpath("//div[@class='header-wrapper']//div[contains(text(),'Elements')]"));
+
+    public static final Target BTN_ELEMENTS= Target.the("Boton contact")
+            .located(By.xpath("//a[normalize-space()='Contact']"));
 
     /* Este elemento BTN_LIST_ELEMENTS se deja parametrizado **/
     public static final Target BTN_LIST_ELEMENTS = Target.the("boton lista opciones elementos")
-            .locatedBy("//div/div/div[1]/div/ul/li[{0}]");
+            .locatedBy("//div[@id='contcont']//a[2]");
 
-    public static final Target TXT_RANDOM_NAME_BTN= Target.the("texto random, del nombre de los botones")
-            .located(By.xpath("//div[@class='main-header']"));
+    public static final Target TXT_RANDOM_NAME_BTN= Target.the("Phones")
+            .located(By.xpath("//a[3]"));
 }
