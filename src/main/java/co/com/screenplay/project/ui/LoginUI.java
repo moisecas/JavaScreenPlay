@@ -6,20 +6,18 @@ import org.openqa.selenium.By;
 
 public class LoginUI extends PageObject {
 
-    /**
-     * Mapeo de localozadores vista LOGIN
-     */
 
-    public static final Target MODAL_LOGIN = Target.the("selecciona en el modal la opcion login")
+
+    public static final Target MODAL_LOGIN = Target.the("seleccionar login")
             .located(By.id("login2"));
 
-    public static final Target INPUT_USER_NAME = Target.the("ingresa el nombre de usuario")
+    public static final Target INPUT_USER_NAME = Target.the("ingresa usuario")
             .located(By.id("loginusername"));
 
-    public static final Target INPUT_PASSWORD = Target.the("ingresa la contraseña")
+    public static final Target INPUT_PASSWORD = Target.the("ingresa password")
             .located(By.id("loginpassword"));
 
     public static final Target BUTTON_LOGIN = Target.the("pulsa el boton entrar")
-            .located(By.xpath("//button[@onclick='logIn()']"));
+            .located(By.className("btn btn-primary"));
 
 }
