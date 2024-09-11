@@ -19,5 +19,4 @@ public class LoginUI extends PageObject {
 
     public static final Target BUTTON_LOGIN = Target.the("pulsa el boton entrar")
             .located(By.className("btn btn-primary"));
-
 }
