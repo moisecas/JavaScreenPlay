@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class HomeUI extends PageObject {
 
     public static final Target ID_HOME = Target.the("Boton home")
-            .located(By.xpath("//li[@class='nav-item active']//a[@class='nav-link']"));
+            .located(By.cssSelector("li[class='nav-item active'] a[class='nav-link']"));
 
 
     public static final Target BTN_ELEMENTS= Target.the("Boton contacto")
