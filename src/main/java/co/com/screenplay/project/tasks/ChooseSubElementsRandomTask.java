@@ -18,20 +18,21 @@ public class ChooseSubElementsRandomTask implements Task {
     private String numberRamdonBtn;
 
     @Override
-    @Step("{0} selecciona aleatoria-mente la posición #numberRamdonBtn de la sub función de elementos")
+    @Step("{0} selecciona la opción de sub-elementos en la posición indicada")
     public <T extends Actor> void performAs(T actor) {
-        String number = numberRamdonBtn;
-        actor.attemptsTo(Scroll.to(BTN_ELEMENTS),
-                Click.on(BTN_LIST_ELEMENTS.of(
-                        number))
+        // Hacer scroll hasta el botón de "Contact" y hacer clic en él
+        actor.attemptsTo(
+                Scroll.to(BTN_ELEMENTS),
+                Click.on(BTN_ELEMENTS) // Hacer clic en el botón "Contact"
         );
 
-        String textBtn = BTN_LIST_ELEMENTS.of(
-                number).resolveFor(actor).getText();
+        // Luego de hacer clic en el botón, seleccionar un elemento de la lista
+        String textBtn = BTN_LIST_ELEMENTS.of(numberRamdonBtn).resolveFor(actor).getText();
         actor.remember(REMEMBER_TEXT_BTN_SUB_ELEMENTS, textBtn);
-    }
 
-    public static ChooseSubElementsRandomTask witchParams(String numberRamdonBtn) {
-        return Tasks.instrumented(ChooseSubElementsRandomTask.class, numberRamdonBtn);
+        // Seleccionar el sub-elemento basado en el número aleatorio proporcionado
+        actor.attemptsTo(
+                Click.on(BTN_LIST_ELEMENTS.of(numberRamdonBtn))
+        );
     }
 }
