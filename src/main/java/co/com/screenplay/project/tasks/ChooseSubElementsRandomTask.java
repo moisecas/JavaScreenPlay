@@ -2,6 +2,7 @@ package co.com.screenplay.project.tasks;
 
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
@@ -16,6 +17,11 @@ import static co.com.screenplay.project.utils.Constants.REMEMBER_TEXT_BTN_SUB_EL
 public class ChooseSubElementsRandomTask implements Task {
 
     private String numberRamdonBtn;
+
+    public static ChooseSubElementsRandomTask withParams(String numberRamdonBtn) {
+        return Tasks.instrumented(ChooseSubElementsRandomTask.class, numberRamdonBtn);
+    }
+
 
     @Override
     @Step("{0} selecciona la opción de sub-elementos en la posición indicada")

@@ -42,7 +42,7 @@ public class OpenWebStep {
     @When("he randomly selects one of the sub-functions")
     public void randomlySelectsSomeOfTheSubfunctions() {
         OnStage.theActorCalled(ACTOR).attemptsTo(
-                ChooseSubElementsRandomTask.witchParams(fakerNumberOneAndNine())
+                ChooseSubElementsRandomTask.withParams(fakerNumberOneAndNine()) // mapea dar clic contacto
         );
     }
 
