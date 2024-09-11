@@ -14,13 +14,13 @@ public class CategoryUI extends PageObject {
 
     // Categorías en la página de Demoblaze
     public static final Target CATEGORY_PHONES = Target.the("Categoría Phones")
-            .located(By.xpath("//a[text()='Phones']"));
+            .located(By.xpath("//div[@id='contcont']//a[2]"));
 
     public static final Target CATEGORY_LAPTOPS = Target.the("Categoría Laptops")
-            .located(By.xpath("//a[text()='Laptops']"));
+            .located(By.xpath("//a[3]"));
 
     public static final Target CATEGORY_MONITORS = Target.the("Categoría Monitors")
-            .located(By.xpath("//a[text()='Monitors']"));
+            .located(By.xpath("//a[4]"));
 
     //metodo para la lista de los productos
 
