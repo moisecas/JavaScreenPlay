@@ -29,7 +29,6 @@ public class OpenWebStep {
     @Given("{string} opens the test website")
     public void opensTheTestWebsite(String actorName) {
         OnStage.theActorCalled(actorName).attemptsTo(
-
         );
     }
 
