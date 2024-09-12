@@ -8,7 +8,7 @@ Feature: Open demoblaze page
     Given "Moiso" opens the test website
 
   @successful
-  Scenario: Validation of the ID Card Elements function
+  Scenario: Open web validation target
     And he wants to validate the elements card function
-    When he randomly selects one of the sub-functions
+    When he selects one of the home
     Then he should see the name of the selected option in the header
