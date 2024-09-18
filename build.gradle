@@ -15,7 +15,7 @@ plugins {
     id 'idea'
 }
 
-defaultTasks 'clean','test','aggregate'
+defaultTasks 'clea','test','aggregate'
 apply plugin: 'net.serenity-bdd.serenity-gradle-plugin'
 
 group 'co.com.screenplay.project'
