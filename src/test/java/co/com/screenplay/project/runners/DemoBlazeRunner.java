@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/demoblaze.feature",
+        features = "src/test/resources/features/navigation.feature",
         glue = "co.com.screenplay.project.stepdefinition"
 )
 
