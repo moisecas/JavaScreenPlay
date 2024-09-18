@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class DemoBlazeStep {
-    @Given("{string} opens the DemoBlaze homepage")
+    @Given("{string} opens the main page of DemoBlaze")
     public void opensTheDemoBlazeHomepage(String actorName) {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled(actorName);
