@@ -151,7 +151,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-09-2024 10:57</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 23-09-2024 14:45</span>
     <br style="clear:left"/>
 </div>
 
@@ -186,9 +186,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-hourglass-top pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">Validate that the user can navigate to the laptops section
+                                <span class="failing-color">Validate that the user can navigate to the laptops section
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -205,12 +205,52 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected product list visibleExpected: is (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.screenplay.project.stepdefinition.DemoBlazeStep.heShouldSeeTheListOfLaptops(DemoBlazeStep.java:30)<br />✽.he should see the list of laptops on the page(file:///C:/Users/moise/Documents/projectBaseCourse/src/test/resources/features/navigation.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource3890345891035776612.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="be369d43fc39d69b669e263749d18fcab6dfaa6452fc3e08e6c58e51786a89b1.png" title=" abre el navegador web en la URL: https://www.demoblaze.com/" width="1860"/>
                 <img src="be369d43fc39d69b669e263749d18fcab6dfaa6452fc3e08e6c58e51786a89b1.png" title=" Alejandro opens the browser at https://www.demoblaze.com/" width="1860"/>
-                <img src="be369d43fc39d69b669e263749d18fcab6dfaa6452fc3e08e6c58e51786a89b1.png" title=" abre el navegador web en la URL: https://www.demoblaze.com/ (completed)" width="1860"/>
-                <img src="be369d43fc39d69b669e263749d18fcab6dfaa6452fc3e08e6c58e51786a89b1.png" title=" Given &quot;moises&quot; opens the main page of DemoBlaze: <span class='pending-color'>PENDING</span>" width="1860"/>
+                <img src="751dcb057e691c15888bfa3b162d974631f796f45e59445bcc316750aec265b4.png" title=" abre el navegador web en la URL: https://www.demoblaze.com/ (completed)" width="1860"/>
+                <img src="751dcb057e691c15888bfa3b162d974631f796f45e59445bcc316750aec265b4.png" title=" Given &quot;moises&quot; opens the main page of DemoBlaze" width="1860"/>
+                <img src="751dcb057e691c15888bfa3b162d974631f796f45e59445bcc316750aec265b4.png" title=" When he selects the &quot;Laptops&quot; category" width="1860"/>
+                <img src="751dcb057e691c15888bfa3b162d974631f796f45e59445bcc316750aec265b4.png" title=" moises selects the Laptops category" width="1860"/>
+                <img src="3a1fc02f5984e909d525af72ff111e066fae4166aac9d802fc9916d4bd7e8cb1.png" title=" Then he should see the list of laptops on the page" width="1860"/>
+                <img src="4a0a9b92e2c154dfca6809a8cc8a733864392dfef98b1eb2a4ccc086f489fee3.png" title=" Then product list visible: <span class='failing-color'>FAILURE</span>" width="1860"/>
             </div>
         </div>
 

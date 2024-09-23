@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Navigation on the DemoBlaze website" skipped="1" tests="1" time="7.15" timestamp="2024-09-18 10:57:43"><testcase name="Validate that the user can navigate to the laptops section"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Navigation on the DemoBlaze website" skipped="0" tests="1" time="35.56" timestamp="2024-09-23 02:45:30"><testcase name="Validate that the user can navigate to the laptops section"><failure message="Expected product list visible&#13;&#10;Expected: is &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected product list visible&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;</failure><system-err>Expected product list visible&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;&#13;
+co.com.screenplay.project.stepdefinition.DemoBlazeStep.heShouldSeeTheListOfLaptops(DemoBlazeStep.java:30)&#13;
+✽.he should see the list of laptops on the page(file:///C:/Users/moise/Documents/projectBaseCourse/src/test/resources/features/navigation.feature:6)&#13;
+</system-err></testcase></testsuite>
