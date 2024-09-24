@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Navigation on the DemoBlaze website" skipped="0" tests="1" time="19.76" timestamp="2024-09-23 03:53:50"><testcase name="Validate that the user can navigate to the laptops section"><failure message="&#13;&#10;Expected: an element that is visible&#13;&#10;     but: no matching element found by [Categoría Laptops located with: xpath: //a[@onclick=&quot;byCat('notebook')&quot;]]" type="java.lang.AssertionError">&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Navigation on the DemoBlaze website" skipped="0" tests="1" time="24.08" timestamp="2024-09-24 09:47:47"><testcase name="Validate that the user can navigate to the laptops section"><failure message="&#13;&#10;Expected: an element that is visible&#13;&#10;     but: no matching element found by [Laptops category located with: //a[3]]" type="java.lang.AssertionError">&#13;
 Expected: an element that is visible&#13;
-     but: no matching element found by [Categoría Laptops located with: xpath: //a[@onclick="byCat('notebook')"]]</failure><system-err>&#13;
+     but: no matching element found by [Laptops category located with: //a[3]]</failure><system-err>&#13;
 Expected: an element that is visible&#13;
-     but: no matching element found by [Categoría Laptops located with: xpath: //a[@onclick="byCat('notebook')"]]&#13;
+     but: no matching element found by [Laptops category located with: //a[3]]&#13;
 co.com.screenplay.project.tasks.NavigateToCategory.performAs(NavigateToCategory.java:16)&#13;
-co.com.screenplay.project.stepdefinition.DemoBlazeStep.heSelectsTheCategory(DemoBlazeStep.java:23)&#13;
+co.com.screenplay.project.stepdefinition.DemoBlazeStep.heSelectsTheCategory(DemoBlazeStep.java:22)&#13;
 io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
 io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
 io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;

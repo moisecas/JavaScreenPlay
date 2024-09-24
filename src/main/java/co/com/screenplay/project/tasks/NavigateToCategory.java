@@ -14,7 +14,7 @@ public class NavigateToCategory implements Task {
     @Step("selects the Laptops category")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(CATEGORY_LAPTOPS, isVisible()).forNoMoreThan(10).seconds(),  // Espera explícita
+                WaitUntil.the(CATEGORY_LAPTOPS, isVisible()).forNoMoreThan(10).seconds(),
                 Click.on(CATEGORY_LAPTOPS)
         );
     }

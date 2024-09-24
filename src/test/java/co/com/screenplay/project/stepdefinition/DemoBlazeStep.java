@@ -12,16 +12,15 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class DemoBlazeStep {
     @Given("{string} opens the main page of DemoBlaze")
-    public void opensTheDemoBlazeHomepage(String actorName) {
+    public void opensTheMainPage(String actorName) {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled(actorName);
     }
 
     @When("he selects the {string} category")
     public void heSelectsTheCategory(String category) {
-        // Here you can extend the logic to handle different categories
         OnStage.theActorInTheSpotlight().attemptsTo(
-                NavigateToCategory.laptops()  // Adjust this to handle dynamic categories
+                NavigateToCategory.laptops()
         );
     }
 
