@@ -13,7 +13,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class TalanaLoginStep {
 
-    @Given("{string} opens the main page of Talana")
+    @Given("{string} opens the main page of Talana Pe")
     public void opensMainPage(String actorName) {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled(actorName).attemptsTo(

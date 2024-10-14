@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/talanaLogin.feature",
+        features = "src/test/resources/features/talana.feature",
         glue = "co.com.screenplay.project.stepdefinition"
 )
 public class TalanaLoginRunner {
