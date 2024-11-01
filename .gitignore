@@ -4,7 +4,7 @@ build/
 !/.mvn/wrapper/gradle-wrapper.jar
 
 # Excluir el archivo de propiedades de credenciales
-/credentials.properties
+src/main/credentials.properties
 
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
