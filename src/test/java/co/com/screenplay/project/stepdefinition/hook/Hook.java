@@ -14,7 +14,7 @@ public class Hook {
     public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
 
-        Actor actor = OnStage.theActorCalled("Alejandro");
+        Actor actor = OnStage.theActorCalled("moiso");
         actor.attemptsTo(OpenWeb.browserURL(WEB_URL_MAP));
     }
 }

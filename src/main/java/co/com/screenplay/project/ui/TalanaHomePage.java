@@ -10,4 +10,7 @@ public class TalanaHomePage {
     public static final Target USERNAME_FIELD = Target.the("Username field")
             .located(By.xpath("//input[@aria-label='Usuario, Email o N° Documento']"));
 
+    public static final Target USERNAME_PASS = Target.the("password")
+            .located(By.xpath("//input[@aria-label='Contraseña']"));
+
 }
