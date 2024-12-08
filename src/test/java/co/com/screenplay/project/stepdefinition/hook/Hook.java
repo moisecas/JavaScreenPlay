@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 public class Hook {
 
-    private static final String WEB_URL_MAP = "https://qa-remuperu.talana.dev/es-pe/";
+    private static final String WEB_URL_MAP = "https://opencart.abstracta.us/";
 
     @Before
     public void setTheStage() {
